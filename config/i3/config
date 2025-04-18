@@ -133,15 +133,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 ###---Start external scripts---###
-# Status Bar
-bar {
-    tray_output HDMI-1
-    tray_output primary
-    output HDMI-1
-    output primary
 
-    position bottom
-    status_command i3status
+bar {
+        status_command i3status
+}
 }
 # BitTorrent daemon
 exec --no-startup-id transmission-daemon
